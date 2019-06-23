@@ -1,0 +1,207 @@
+body {
+  background-color: rgb(0, 0, 0);
+  /*background-image: url("portfolio/2.jpg");
+  background-size: auto;*/
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-warp: break-word;
+  overflow-x: hidden;
+}
+
+#naglowek {
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+  position:fixed; z-index: 10;
+  left: auto;
+  top: auto;
+}
+
+#logo {
+  float: left;
+  position: absolute; z-index: 5;
+  /*display: inline-block;*/
+  /*margin: 10px;*/
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:  hidden;
+  font-size: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  position: relative; z-index: 6;
+  display: block;
+  background-color: rgba(32, 32, 32, 0.7);
+  /*color: white;*/
+  padding: 14px 16px;
+  color: #03a9f4;
+  font-family: cursive;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #52d613;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+  /*  background-size: contain;*/
+}
+
+.pozycja1 { /* Ogarnąć ten element Witaj w moim świecie żeby się dostosowywał i nie zjeżdżałe ze wszystkim
+  więc no tego jak to się ogarnie to później dopisać i poprzerzucać na pozostałe strony naprawioną klasę */
+    position: absolute; bottom: 0; left: 0; z-index: 1; /*left: 1cm; top: 10px z-index: 1;*/
+    background:  rgba(0, 0, 0, 0.0);
+    width: 60%;
+    height: 10%;
+    padding: 1px;
+    text-align: center;
+    top:20%;
+    left: 10%;
+    font-size: 3vmax;
+    color: #03a9f4;
+    font-family: cursive;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size-adjust: auto;
+    transform: translate(-20%, -80%);
+    -ms-transform: translate(20%, -20%);
+}
+
+#container {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  /*position: absolute; z-index: 4;*/
+  width: 100%;
+  /*margin: 10px;*/
+}
+
+#platform {
+  /*position: absolute; left: 5%; z-index: 4;*/
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.image{
+    float: left;
+    margin-top: 0%;
+    width: 100%;
+    position: absolute; z-index: -1;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    /*display: block;*/
+}
+
+/* ----------------------------------------------- */
+/* Pozmieniać trochu wygląd wpisw, zrobić bardziej pod tweetera */
+
+
+#blog-content {
+		width: 100%;
+		height: 100vh;
+		background-color: rgb(0, 0, 0);/*#fffbf2;*/
+}
+
+#posts{
+	width: 45%;
+	height: 100vh;  /* Ogarnąć co to za jednostki */
+	margin: auto;
+	padding-top: 2vh;
+}
+
+
+.post{
+	clear: both;
+	width: calc(100% - 2px);
+	height: auto;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	font-family: Calibri;
+	background-color: #03a9f4; /*#EEEEEE;*/
+  border: 0.2vh solid white;
+  padding: 10px;
+  margin-top: 2%;
+  border-radius: 50px 20px;
+	display: inline-block;
+}
+
+.post2{
+  border-radius: 20px 50px;
+}
+
+.post img{
+	width: 3vw;
+	height: 3vw;
+}
+
+.avdiv{
+	float: left;
+	padding-right: 0.5vw;
+	height: auto;
+}
+
+.avdiv2{
+	float: right;
+}
+
+.headerdiv{
+	float: left;
+	width: calc(100% - 3.5vw);
+	font-size: 2vh;
+}
+
+.textdiv{
+	width: calc(100% - 3.5vw);
+	height: auto;
+	float: left;
+	font-size: 3vh;
+}
+
+
+
+/* ----------------------------------------------- */
+
+/* Ogarnąć stopkę bo się trzyma dołu ekranu, a ma nie jeździć
+jak atrubut:fixed tylko być na samym dole strony */
+
+
+#stopka {
+  clear: both;
+  /*margin: -10px;*/
+}
+
+footer {
+  position: absolute;
+  margin-top: 22%;
+  width: 100%;
+  height: 2%;
+  color: #0288d1;
+  font-family: fantasy;
+  text-align: center;
+  font-size: 90%;
+  padding: 1%;
+  background-color: rgb(32, 32, 32);
+}

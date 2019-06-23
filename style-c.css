@@ -1,0 +1,256 @@
+body {
+  background-color: rgb(0, 0, 0);
+  /*background-image: url("portfolio/2.jpg");
+  background-size: auto;*/
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-warp: break-word;
+  overflow-x: hidden;
+}
+
+#naglowek {
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  background-color: rgb(32, 32, 32);
+  width: 100%;
+  position:fixed; z-index: 10;
+  left: auto;
+  top: auto;
+}
+
+#logo {
+  float: left;
+  position: absolute; z-index: 5;
+  /*display: inline-block;*/
+  /*margin: 10px;*/
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow:  hidden;
+  font-size: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  position: relative; z-index: 6;
+  display: block;
+  background-color: rgba(32, 32, 32, 0.7);
+  /*color: white;*/
+  padding: 14px 16px;
+  color: #03a9f4;
+  font-family: cursive;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #52d613;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+  /*  background-size: contain;*/
+}
+
+.pozycja1 {
+    position: absolute; bottom: 0px; left: 0px; z-index: 1; /*left: 1cm; top: 10px z-index: 1;*/
+    background:  rgba(0, 0, 0, 0.0);
+    width: 60%;
+    height: 10%;
+    padding: 1px;
+    text-align: center;
+    top:20%;
+    left: 10%;
+    font-size: 3vmax;
+    color: #03a9f4;
+    font-family: cursive;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size-adjust: auto;
+    transform: translate(-20%, -80%);
+    -ms-transform: translate(20%, -20%);
+}
+
+#container {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  /*position: absolute; z-index: 4;*/
+  width: 100%;
+  /*margin: 10px;*/
+}
+
+#platform {
+  /*position: absolute; left: 5%; z-index: 4;*/
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.image{
+    float: left;
+    margin-top: 0%;
+    width: 100%;
+    position: absolute; z-index: -1;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    /*display: block;*/
+}
+
+#przedzial {
+  position: relative; z-index: 5;
+  float: left;
+  width: 0.4vmax;
+  height: 45vmax;
+  padding: 0;
+  /*margin: 5vmax;*/
+  margin-top: 10vmax;
+  margin-bottom: 10vmax;
+  border-radius: 50vh;
+  background-color: #0288d1;
+}
+
+#formularz {
+  position: relative; z-index: 5;
+  float: left;
+  width: 35vmax;
+  height: 30vmax;
+  padding: vmax;
+  margin-top: 15vmax;
+  margin-right: 5vmax;
+  margin-left: 2vmax;
+  /*background-color: green;*/
+}
+
+#formularz h2 {
+  color: #03a9f4;
+  font-family: cursive;
+  font-size: 3vmax;
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: cursive;
+  font-size: 1vmax;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: ;/*#f2f2f2;*/
+  color: #0288d1;
+  font-family: cursive;
+  font-size: 1.4vmax;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+#mapka {
+  position: relative; z-index: 5;
+  float: left;
+  padding: vmax;
+  margin-top: 15vmax;
+  margin-right: 2vmax;
+  margin-left: 5vmax;
+
+}
+
+#mapka h1 {
+  color: #03a9f4;
+  font-family: cursive;
+  font-size: 3vmax;
+  text-align: left;
+}
+
+#mapka iframe {
+  box-shadow: -0.1vh 0.1vh 0.5vh #03a9f4; /*#888888;*/
+  width: 45vmax;
+  height: 25vmax;
+}
+
+
+#stopka {
+  clear: both;
+  /*margin: -10px;*/
+}
+
+footer {
+  position: absolute;
+  margin-top: 11%;
+  width: 100%;
+  height: 4vmax;
+  color: #0288d1;
+  font-family: fantasy;
+  text-align: center;
+  font-size: 90%;
+  padding: 1%;
+  background-color: rgb(32, 32, 32);
+}
